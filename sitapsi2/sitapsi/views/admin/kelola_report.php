@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Kelola Report dari Wali Kelas (UI GLOBAL PORTAL)
- * Admin menerima report, membaca alasan, lalu menyetujui atau menolak.
- */
+
 
 session_start();
 require_once '../../../config/database.php';

@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Proses Login Orang Tua / Wali Murid
- * Keamanan: Menggunakan MD5 Hash (sesuai dummy database awal)
- * PENYESUAIAN: Pembuatan Cookie "Ingat Saya"
- */
+
 
 session_start();
 require_once '../../config/database.php';

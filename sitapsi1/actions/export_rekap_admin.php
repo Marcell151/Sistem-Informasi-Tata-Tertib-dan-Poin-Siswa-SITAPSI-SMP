@@ -1,7 +1,4 @@
 <?php
-/**
- * SITAPSI - Export Rekapitulasi Kelas (Excel)
- */
 
 session_start();
 require_once '../config/database.php';

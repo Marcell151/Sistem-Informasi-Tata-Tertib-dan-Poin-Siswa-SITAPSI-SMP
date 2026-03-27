@@ -1,7 +1,5 @@
 <?php
-/**
- * SITAPSI - Logout Khusus Orang Tua
- */
+
 session_start();
 
 // Hapus hanya session orang tua (Jika suatu saat ada admin yang login barengan di browser yang sama, tidak bentrok)

@@ -1,7 +1,4 @@
 <?php
-/**
- * SITAPSI - Validasi SP
- */
 
 session_start();
 require_once '../config/database.php';

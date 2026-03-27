@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Proses Report (MANUAL TICKETING)
- * Hanya mengubah status menjadi Disetujui/Ditolak. Tidak melakukan hapus otomatis.
- */
+
 
 session_start();
 require_once '../../config/database.php';

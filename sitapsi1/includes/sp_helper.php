@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - SP Helper (FIXED - Insert per Kategori)
- * Penyesuaian: Mengganti 'Dikeluarkan' menjadi 'Sanksi oleh Sekolah' pada level_order
- */
 
 function recalculateStatusSP($id_anggota) {
     // Ambil poin terkini siswa

@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Audit Harian (LOGIKA ASLI + UI GLOBAL + FIX LAYOUT)
- * PENYESUAIAN: Pemanggilan kolom lampiran_link
- */
+
 
 session_start();
 require_once '../../../config/database.php';

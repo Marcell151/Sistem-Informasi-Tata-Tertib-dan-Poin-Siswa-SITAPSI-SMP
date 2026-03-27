@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Edit Transaksi Pelanggaran (LOGIKA ASLI TABS + UI GLOBAL)
- * Edit pelanggaran dari Audit Harian dengan sinkronisasi poin otomatis
- */
+
 
 session_start();
 require_once '../../../config/database.php';

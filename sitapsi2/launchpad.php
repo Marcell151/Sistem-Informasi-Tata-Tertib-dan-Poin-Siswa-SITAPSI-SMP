@@ -1,8 +1,5 @@
 <?php
-/**
- * PORTAL TERPADU - App Launchpad (SSO)
- * Lokasi: C:\xampp\htdocs\portal_sekolah\launchpad.php
- */
+
 session_start();
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) { 

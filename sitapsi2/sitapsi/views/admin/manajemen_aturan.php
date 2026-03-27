@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Manajemen Aturan (UI GLOBAL PORTAL)
- * Tab 1: Aturan Pelanggaran & SP
- * Tab 2: Referensi Sanksi
- */
+
 
 session_start();
 require_once '../../../config/database.php';

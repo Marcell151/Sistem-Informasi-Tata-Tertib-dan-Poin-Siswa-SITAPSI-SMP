@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - Action Ganti Semester (SMART SYNC FIXED)
- * Mereset dan mengkalkulasi ulang poin & SP berdasarkan riwayat semester aktif.
- */
 
 session_start();
 require_once '../config/database.php';

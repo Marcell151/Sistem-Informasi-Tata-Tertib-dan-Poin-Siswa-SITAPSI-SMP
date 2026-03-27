@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Manajemen Kelas (UI GLOBAL PORTAL)
- * CRUD lengkap untuk data kelas
- */
+
 
 session_start();
 require_once '../../config/database.php';

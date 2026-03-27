@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Detail Siswa (FIX TABLE WRAP + UI GLOBAL)
- * FIX LOGIKA: Spanduk Kandidat Reward dinamis (Semester / Sertifikat Tahunan)
- * PENYESUAIAN: UI Sanksi Kolom Mandiri (List) & Algoritma Irisan
- */
+
 
 session_start();
 require_once '../../../config/database.php';

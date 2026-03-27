@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Edit Sanksi
- * Update data sanksi di master data
- */
+
 
 session_start();
 require_once '../../config/database.php';

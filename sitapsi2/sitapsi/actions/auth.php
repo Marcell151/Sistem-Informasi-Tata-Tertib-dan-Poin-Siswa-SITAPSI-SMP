@@ -1,11 +1,5 @@
 <?php
-/**
- * SITAPSI - Authentication Handler
- * Logic Login untuk Admin dan Guru dengan Security Best Practices
- * 
- * @author Senior PHP Developer
- * @version 1.0
- */
+
 
 session_start();
 require_once '../../config/database.php';
@@ -37,9 +31,7 @@ try {
     redirectToLogin('Terjadi kesalahan sistem. Silakan coba lagi.');
 }
 
-/**
- * Handle Admin Login
- */
+
 function handleAdminLogin() {
     // Validasi input
     $username = trim($_POST['username'] ?? '');
@@ -96,9 +88,7 @@ function handleAdminLogin() {
     exit;
 }
 
-/**
- * Handle Guru Login
- */
+
 function handleGuruLogin() {
     // Validasi input
     $guru_id = $_POST['guru_id'] ?? '';
@@ -162,18 +152,14 @@ function handleGuruLogin() {
     exit;
 }
 
-/**
- * Redirect ke halaman login dengan pesan error
- */
+
 function redirectToLogin($message) {
     $_SESSION['login_error'] = $message;
     header('Location: ../views/login.php');
     exit;
 }
 
-/**
- * Redirect ke dashboard sesuai role
- */
+
 function redirectToDashboard() {
     if ($_SESSION['role'] === 'Admin' || $_SESSION['role'] === 'SuperAdmin') {
         header('Location: ../views/admin/dashboard.php');
@@ -183,9 +169,7 @@ function redirectToDashboard() {
     exit;
 }
 
-/**
- * Helper: Generate secure random token
- */
+
 function generateSecureToken($length = 32) {
     return bin2hex(random_bytes($length));
 }

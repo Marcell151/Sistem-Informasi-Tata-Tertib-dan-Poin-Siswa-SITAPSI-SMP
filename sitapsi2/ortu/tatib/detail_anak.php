@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Detail Siswa untuk Orang Tua (READ ONLY)
- * Keamanan: Pengecekan Relasi id_ortu & no_induk
- * PENYESUAIAN: Algoritma Filter Sanksi Cerdas (Array Intersect)
- */
+
 
 session_start();
 require_once '../../config/database.php';

@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Rekap Kelas untuk Guru (UI GLOBAL PORTAL)
- * Fitur: Matriks Poin, Reward Badge (Logika Semester & 1 Tahun)
- */
+
 
 session_start();
 require_once '../../../config/database.php';

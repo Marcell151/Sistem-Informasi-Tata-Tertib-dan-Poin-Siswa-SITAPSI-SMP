@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Hapus Transaksi Pelanggaran (FIXED - HY093)
- * Bug fix: Parameter PDO yang duplikat
- */
+
 
 session_start();
 require_once '../../config/database.php';

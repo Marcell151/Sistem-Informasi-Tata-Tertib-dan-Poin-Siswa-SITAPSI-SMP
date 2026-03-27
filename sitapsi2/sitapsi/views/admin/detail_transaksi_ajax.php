@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Detail Transaksi (AJAX - UI GLOBAL)
- * Dipanggil via AJAX untuk menampilkan detail di modal
- * PENYESUAIAN: Penampil Cerdas untuk Link Eksternal, PDF, Word, dan Gambar
- */
+
 
 require_once '../../../config/database.php';
 

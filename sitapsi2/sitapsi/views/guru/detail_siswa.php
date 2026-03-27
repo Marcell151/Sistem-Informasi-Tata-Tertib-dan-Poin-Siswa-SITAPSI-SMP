@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Detail Siswa untuk Guru (MANUAL REPORT SYSTEM - UI GLOBAL)
- * FIX LOGIKA: Spanduk Kandidat Reward dinamis + Smart Modal Lampiran Bukti
- * PENYESUAIAN: Algoritma Sanksi Pintar (Irisan) + UI Kolom Sanksi Terpisah
- */
+
 
 session_start();
 require_once '../../../config/database.php';

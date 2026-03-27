@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - Proses Kenaikan Kelas (FIXED - NO INDUK)
- * Fix: Cek duplikat sebelum insert - jika sudah ada di tahun ini, UPDATE saja
- */
 
 session_start();
 require_once '../config/database.php';

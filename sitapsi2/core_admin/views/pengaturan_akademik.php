@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Pengaturan Akademik (UI GLOBAL PORTAL)
- * FITUR BARU: Proses Kelulusan, Kenaikan Kelas (Lock/Unlock System)
- * PENYESUAIAN: Penghapusan kotak Arsip Historis (Sekarang berdiri sendiri)
- */
+
 
 session_start();
 require_once '../../config/database.php';

@@ -1,10 +1,5 @@
 <?php
-/**
- * SITAPSI - Cetak Surat Peringatan (TEMPLATE ASLI SEKOLAH)
- * Desain kertas A4 disesuaikan 100% dengan format fisik sekolah.
- * Teks Pembinaan/Sanksi digenerate otomatis berdasarkan tingkat SP sesuai Buku Tatibsi.
- * Penyesuaian: Fix Halaman Kedua Kosong (Limit Max Height & Pagebreak Avoid).
- */
+
 
 session_start();
 require_once '../../../config/database.php';

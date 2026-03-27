@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Logout Handler
- * Menghapus session dan cookie dengan aman
- * [PENYESUAIAN]: Mengarah ke Portal Terpadu dan menghapus cookie SSO
- */
+
 
 session_start();
 

@@ -1,9 +1,4 @@
 <?php
-/**
- * SITAPSI - Data Siswa (UI ALIGNED WITH GLOBAL PORTAL)
- * [FIXED]: XSS Vulnerability pada tombol Edit & Hapus
- * [PENYESUAIAN BARU]: Relasi id_ortu dengan Dropdown TomSelect
- */
 
 session_start();
 require_once '../../config/database.php';
@@ -21,10 +16,8 @@ $tahun_aktif = fetchOne("
 
 $kelas_list = fetchAll("SELECT id_kelas, nama_kelas FROM tb_kelas ORDER BY tingkat, nama_kelas");
 
-// AMBIL DATA ORANG TUA UNTUK DROPDOWN
 $ortu_list = fetchAll("SELECT id_ortu, nik_ortu, nama_ayah, nama_ibu FROM tb_orang_tua ORDER BY nama_ayah ASC");
 
-// [PENYESUAIAN] Tambah JOIN ke tb_orang_tua untuk memanggil NIK ortu
 $sql = "
     SELECT 
         s.no_induk,
@@ -99,7 +92,6 @@ $card_class = "bg-white border border-[#E2E8F0] rounded-xl shadow-sm";
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
     <style>
-        /* Styling TomSelect agar mirip Tailwind Input */
         .ts-control { border-radius: 0.5rem !important; padding: 0.625rem 1rem !important; border-color: #E2E8F0 !important; font-size: 0.875rem !important;}
         .ts-control.focus { border-color: #000080 !important; box-shadow: 0 0 0 2px rgba(0,0,128,0.1) !important; }
     </style>

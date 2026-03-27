@@ -1,9 +1,4 @@
 <?php
-/**
- * PORTAL TERPADU - Global Logout System
- * Lokasi: htdocs/portal_sekolah/logout.php
- * Menghapus semua sesi dari seluruh modul (Admin, Guru, Ortu)
- */
 
 session_start();
 

@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - Logout Handler
- * Menghapus session dan cookie dengan aman
- */
 
 session_start();
 

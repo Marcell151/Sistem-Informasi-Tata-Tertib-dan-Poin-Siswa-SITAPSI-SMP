@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Monitoring Siswa List (UI GLOBAL PORTAL)
- * FIX LOGIKA: Lencana Kandidat Reward dinamis (Semester / Sertifikat Tahunan)
- */
+
 
 session_start();
 require_once '../../../config/database.php';

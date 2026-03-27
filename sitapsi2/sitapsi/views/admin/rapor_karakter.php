@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Rapor Karakter (UI GLOBAL PORTAL)
- * Step 1: Pilih Kelas
- */
+
 
 session_start();
 require_once '../../../config/database.php';

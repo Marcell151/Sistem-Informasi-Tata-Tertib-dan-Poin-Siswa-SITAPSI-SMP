@@ -1,9 +1,5 @@
 <?php
-/**
- * PORTAL TERPADU - Proses Login (SSO)
- * Lokasi: htdocs/portal_sekolah/login_process.php
- * FIX: Hapus MD5 untuk Admin & Tambahkan Session bawaan SITAPSI
- */
+
 session_start();
 require_once 'config/database.php';
 

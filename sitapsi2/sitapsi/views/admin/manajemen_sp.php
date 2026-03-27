@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Manajemen SP (UI GLOBAL PORTAL)
- * Menampilkan riwayat SP dengan filter Semester Pintar
- * Penyesuaian: Sembunyikan tombol Cetak untuk 'Sanksi oleh Sekolah'
- */
+
 
 session_start();
 require_once '../../../config/database.php';

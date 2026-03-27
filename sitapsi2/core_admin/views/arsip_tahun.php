@@ -1,8 +1,5 @@
 <?php
-/**
- * PORTAL SEKOLAH - Arsip Global Super-App
- * Modul Tatib: Analitik Rekam Jejak Siswa (Read-Only)
- */
+
 
 session_start();
 require_once '../../config/database.php';

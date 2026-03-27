@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Dashboard Admin (UI ALIGNED WITH GLOBAL PORTAL)
- * FIX LOGIKA: Menyesuaikan Grafik & Aktivitas berdasarkan Semester Aktif
- */
+
 
 session_start();
 require_once '../../../config/database.php';

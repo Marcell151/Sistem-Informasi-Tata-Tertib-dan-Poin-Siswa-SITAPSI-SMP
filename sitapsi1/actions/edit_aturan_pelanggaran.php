@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - Edit Aturan Pelanggaran
- * Update data jenis pelanggaran di master data
- */
 
 session_start();
 require_once '../config/database.php';

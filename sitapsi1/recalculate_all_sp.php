@@ -1,9 +1,4 @@
 <?php
-/**
- * TEMPORARY FILE - Recalculate All SP
- * Jalankan sekali via browser: http://localhost/sitapsi/recalculate_all_sp.php
- * Lalu HAPUS file ini!
- */
 
 session_start();
 require_once 'config/database.php';

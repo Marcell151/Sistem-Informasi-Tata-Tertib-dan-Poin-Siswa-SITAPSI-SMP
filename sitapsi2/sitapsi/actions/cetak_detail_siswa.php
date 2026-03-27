@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Cetak Detail Pelanggaran Siswa (Format Buku Pembinaan 3 Kolom)
- * FIXED: Lebar kolom 'Denda' diperbesar agar teks header tidak turun/terpotong.
- * PENYESUAIAN AKSES: Mengizinkan Orang Tua mencetak rapor dengan validasi IDOR.
- */
+
 
 session_start();
 require_once '../../config/database.php';
@@ -142,9 +138,7 @@ $btn_outline = "px-6 py-2.5 bg-white border border-[#E2E8F0] text-slate-700 text
             print-color-adjust: exact; 
         }
         
-        /* FIX LEBAR KOLOM: Denda diperlebar jadi 6%, Aspek dikurangi jadi 15% */
-        /* Total 1 Kelompok: Tgl(11) + Aspek(15) + Denda(6) = 32% */
-        /* Total 3 Kelompok (3 x 32) = 96% + Spacer (2 x 2) = 100% */
+        
         .col-tgl { width: 11%; }
         .col-aspek { width: 15%; }
         .col-denda { width: 6%; text-align: center; white-space: nowrap; } 

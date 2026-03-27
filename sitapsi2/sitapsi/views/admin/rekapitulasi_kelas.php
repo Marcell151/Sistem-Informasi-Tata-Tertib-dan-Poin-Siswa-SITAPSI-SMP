@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Rekapitulasi Kelas (UI GLOBAL PORTAL)
- * Menampilkan matriks poin dan SP per kategori
- * FIX LOGIKA: Lencana Kandidat Reward dinamis (Semester / Sertifikat Tahunan)
- */
+
 
 session_start();
 require_once '../../../config/database.php';

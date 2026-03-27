@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Action Update PIN oleh Guru Sendiri
- * [FIX]: Menyesuaikan nama kolom menjadi 'pin_validasi'
- */
+
 
 session_start();
 require_once '../../config/database.php';

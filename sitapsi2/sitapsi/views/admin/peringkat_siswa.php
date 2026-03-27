@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Peringkat & Statistik Kedisiplinan (Leaderboard)
- * Penyesuaian: Menghapus Filter "Semua (1 Tahun)" karena poin di-reset per semester.
- * PENYESUAIAN BARU: Modal Konsistensi Kedisiplinan mengikuti Filter Kelas/Tingkat di halaman utama.
- */
+
 
 session_start();
 require_once '../../../config/database.php';

@@ -1,9 +1,4 @@
 <?php
-/**
- * SITAPSI - Sidebar Admin (Versi Standalone / Belum Integrasi)
- * Menggunakan UI Modern (Translasi dari React/Next.js ke PHP Native)
- * PENYESUAIAN: Tambah Menu Data Wali Murid (Orang Tua) & Arsip Global
- */
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 

@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Download Template CSV Import Siswa
- * PURE PHP - Pemisah menggunakan KOMA (,) agar langsung terpotong di Excel English/US
- * PENYESUAIAN: Penambahan Kolom NIK Orang Tua untuk Autocreate Akun
- */
+
 
 session_start();
 require_once '../../config/database.php';

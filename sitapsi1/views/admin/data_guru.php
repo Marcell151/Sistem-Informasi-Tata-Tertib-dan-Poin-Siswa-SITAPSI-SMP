@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Data Guru (UI GLOBAL PORTAL)
- * Mengelola Master Data Guru & Status Wali Kelas
- */
+
 
 session_start();
 require_once '../../config/database.php';

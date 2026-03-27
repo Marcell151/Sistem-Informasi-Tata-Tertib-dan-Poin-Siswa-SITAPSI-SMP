@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Navbar Guru (Terintegrasi UI Global)
- * PENYESUAIAN: Penambahan Tombol Kembali ke Launchpad (Portal SSO)
- */
+
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $user_name = $_SESSION['nama_lengkap'] ?? ($user['nama_lengkap'] ?? 'Guru');

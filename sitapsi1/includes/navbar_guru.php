@@ -1,9 +1,4 @@
 <?php
-/**
- * SITAPSI - Navbar Guru (Terintegrasi UI Global)
- * Desain translasi dari React/Next.js ke PHP Native
- * PENYESUAIAN: Penambahan Fitur Ganti PIN Guru
- */
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $user_name = $_SESSION['nama_lengkap'] ?? ($user['nama_lengkap'] ?? 'Guru');

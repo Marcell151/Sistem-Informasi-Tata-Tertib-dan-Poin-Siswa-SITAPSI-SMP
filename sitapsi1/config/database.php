@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Database Configuration
- * Koneksi PDO Aman dengan Error Handling
- */
+
 date_default_timezone_set('Asia/Jakarta');
 
 // Konfigurasi Database
@@ -12,10 +9,7 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
-/**
- * Fungsi untuk mendapatkan koneksi database PDO
- * @return PDO|null
- */
+
 function getDBConnection() {
     static $pdo = null;
     
@@ -41,9 +35,7 @@ function getDBConnection() {
     return $pdo;
 }
 
-/**
- * Fungsi helper untuk execute query dengan prepared statement
- */
+
 function executeQuery($sql, $params = []) {
     $pdo = getDBConnection();
     $stmt = $pdo->prepare($sql);
@@ -51,25 +43,19 @@ function executeQuery($sql, $params = []) {
     return $stmt;
 }
 
-/**
- * Fungsi untuk mendapatkan satu baris data
- */
+
 function fetchOne($sql, $params = []) {
     $stmt = executeQuery($sql, $params);
     return $stmt->fetch();
 }
 
-/**
- * Fungsi untuk mendapatkan semua baris data
- */
+
 function fetchAll($sql, $params = []) {
     $stmt = executeQuery($sql, $params);
     return $stmt->fetchAll();
 }
 
-/**
- * Fungsi untuk mendapatkan ID terakhir yang di-insert
- */
+
 function getLastInsertId() {
     $pdo = getDBConnection();
     return $pdo->lastInsertId();

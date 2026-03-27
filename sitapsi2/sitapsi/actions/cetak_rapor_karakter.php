@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Cetak Rapor Laporan Tata Tertib Siswa
- * FIXED: Tanggal cetak di bagian tanda tangan (bawah) sudah menggunakan Bahasa Indonesia.
- */
+
 
 session_start();
 require_once '../../config/database.php';

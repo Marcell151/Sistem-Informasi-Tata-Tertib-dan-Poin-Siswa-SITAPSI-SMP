@@ -1,18 +1,12 @@
 <?php
-/**
- * PORTAL SEKOLAH - Session Security Check (Core)
- * File ini di-include di setiap halaman yang memerlukan autentikasi
- * PENYESUAIAN: Redirect diarahkan ke index.php portal utama
- */
+
 
 // Start session jika belum
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-/**
- * Cek apakah user sudah login
- */
+
 function checkLogin() {
     if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) {
         // Redirect ke login Portal Terpadu (naik 2 folder dari views/...)
@@ -35,9 +29,7 @@ function checkLogin() {
     $_SESSION['login_time'] = time();
 }
 
-/**
- * Cek apakah user memiliki role tertentu
- */
+
 function checkRole($allowed_roles = []) {
     checkLogin();
     
@@ -48,24 +40,17 @@ function checkRole($allowed_roles = []) {
     }
 }
 
-/**
- * Cek apakah user adalah Admin
- */
+
 function requireAdmin() {
     checkRole(['Admin', 'SuperAdmin']);
 }
 
-/**
- * Cek apakah user adalah Guru
- */
+
 function requireGuru() {
     checkRole(['Guru']);
 }
 
-/**
- * Get current user info
- * [FIX]: Menambahkan fallback (?? '') untuk mencegah error undefined array key
- */
+
 function getCurrentUser() {
     checkLogin();
     return [
@@ -77,9 +62,7 @@ function getCurrentUser() {
     ];
 }
 
-/**
- * Cek apakah user adalah admin atau guru
- */
+
 function isAdmin() {
     return isset($_SESSION['role']) && in_array($_SESSION['role'], ['Admin', 'SuperAdmin']);
 }

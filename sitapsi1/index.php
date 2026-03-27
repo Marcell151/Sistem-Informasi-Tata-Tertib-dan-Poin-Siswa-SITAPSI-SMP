@@ -1,8 +1,4 @@
 <?php
-/**
- * SITAPSI - Entry Point
- * Redirect ke halaman login atau dashboard sesuai status login
- */
 
 session_start();
 

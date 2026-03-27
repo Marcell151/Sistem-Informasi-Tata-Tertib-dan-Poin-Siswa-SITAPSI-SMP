@@ -1,19 +1,12 @@
 <?php
-/**
- * SITAPSI - Session Security Check
- * File ini harus di-include di setiap halaman yang memerlukan autentikasi
- * 
- * Usage: require_once '../includes/session_check.php';
- */
+
 
 // Start session jika belum
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-/**
- * Cek apakah user sudah login
- */
+
 function checkLogin() {
     if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) {
         // Redirect ke login
@@ -35,9 +28,7 @@ function checkLogin() {
     $_SESSION['login_time'] = time();
 }
 
-/**
- * Cek apakah user memiliki role tertentu
- */
+
 function checkRole($allowed_roles = []) {
     checkLogin();
     
@@ -48,23 +39,17 @@ function checkRole($allowed_roles = []) {
     }
 }
 
-/**
- * Cek apakah user adalah Admin
- */
+
 function requireAdmin() {
     checkRole(['Admin', 'SuperAdmin']);
 }
 
-/**
- * Cek apakah user adalah Guru
- */
+
 function requireGuru() {
     checkRole(['Guru']);
 }
 
-/**
- * Get current user info
- */
+
 function getCurrentUser() {
     checkLogin();
     return [
@@ -76,9 +61,7 @@ function getCurrentUser() {
     ];
 }
 
-/**
- * Cek apakah user adalah admin atau guru
- */
+
 function isAdmin() {
     return isset($_SESSION['role']) && in_array($_SESSION['role'], ['Admin', 'SuperAdmin']);
 }

@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - List Siswa untuk Rapor Karakter (UI GLOBAL PORTAL)
- * Step 2: Pilih Siswa dari Kelas
- */
+
 
 session_start();
 require_once '../../../config/database.php';
