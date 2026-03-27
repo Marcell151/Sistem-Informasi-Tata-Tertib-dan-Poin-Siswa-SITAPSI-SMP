@@ -13,6 +13,13 @@ require_once 'config/database.php';
 $nama_user = $_SESSION['nama_lengkap'];
 $role = $_SESSION['role'];
 
+// --- LOGIKA PENENTUAN FOLDER & FILE TUJUAN ---
+// Jika SuperAdmin atau Admin, arahkan ke folder 'admin' dan file 'dashboard.php'
+// Jika Guru, arahkan ke folder 'guru' dan file 'input_pelanggaran.php'
+$folder_tujuan = ($role === 'SuperAdmin' || $role === 'Admin') ? 'admin' : strtolower($role);
+$file_tujuan   = ($role === 'SuperAdmin' || $role === 'Admin') ? 'dashboard' : 'input_pelanggaran';
+// ---------------------------------------------
+
 // ==========================================
 // 2. PENGECEKAN SETUP AWAL (TAHUN AJARAN)
 // Menggunakan fungsi fetchOne() dari database.php
@@ -131,7 +138,7 @@ if (!$cek_ta) {
             <h2 class="text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-4">Modul Operasional</h2>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 
-                <a href="sitapsi/views/<?= strtolower($role) ?>/<?= ($role === 'Admin' || $role === 'SuperAdmin') ? 'dashboard' : 'input_pelanggaran' ?>.php" class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#000080] transition-all group relative overflow-hidden flex flex-col h-full">
+                <a href="sitapsi/views/<?= $folder_tujuan ?>/<?= $file_tujuan ?>.php" class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#000080] transition-all group relative overflow-hidden flex flex-col h-full">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full transform translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500 -z-10"></div>
                     <div class="w-14 h-14 bg-[#000080] text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-900/20 group-hover:scale-110 transition-transform">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
