@@ -211,7 +211,8 @@ CREATE TABLE tb_riwayat_sp (
     tanggal_validasi DATE, 
     status ENUM('Pending', 'Selesai') DEFAULT 'Pending',
     id_admin INT, 
-    
+    catatan_admin TEXT NULL COMMENT 'Pesan spesifik dari Admin untuk Orang Tua';
+
     FOREIGN KEY (id_anggota) REFERENCES tb_anggota_kelas(id_anggota),
     FOREIGN KEY (id_admin) REFERENCES tb_admin(id_admin)
 );
@@ -234,6 +235,17 @@ CREATE TABLE tb_riwayat_sp (
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
+    -- Mengingatkan kembali struktur tabelnya:
+    CREATE TABLE tb_feedback_ortu (
+        id_feedback INT AUTO_INCREMENT PRIMARY KEY,
+        id_ortu INT NOT NULL,
+        id_sp INT NOT NULL, -- Mengikat langsung ke SP tertentu
+        isi_feedback TEXT NOT NULL,
+        tanggal_kirim DATETIME DEFAULT CURRENT_TIMESTAMP,
+        status_baca ENUM('Belum Dibaca', 'Sudah Dibaca') DEFAULT 'Belum Dibaca',
+        id_admin_pembaca INT NULL 
+    );
+    
     -- 2. Pasang Gembok Relasi (Foreign Key) ke tabel Siswa
     ALTER TABLE tb_siswa 
     ADD CONSTRAINT fk_ortu_siswa 
