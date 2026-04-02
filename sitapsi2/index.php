@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * PORTAL TERPADU - Halaman Login SSO
+ * Lokasi: htdocs/portal_sekolah/index.php
+ */
 session_start();
 
 // Jika sudah login, langsung ke Launchpad
@@ -47,8 +50,8 @@ $active_tab = ($saved_guru_id) ? 'guru' : 'admin';
     <div class="w-full max-w-md relative z-10 mb-6">
         
         <div class="text-center mb-8">
-            <div class="w-20 h-20 bg-white rounded-2xl shadow-lg border border-slate-100 flex items-center justify-center mx-auto mb-4 text-[#000080]">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white shadow-md border border-slate-100 mb-4 p-2">
+                <img src="sitapsi/assets/img/logo.png" alt="Logo Santa Maria" class="w-full h-full object-contain">
             </div>
             <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">Portal Terpadu</h1>
             <p class="text-sm font-medium text-slate-500 mt-1">SMPK Santa Maria 2 Malang</p>

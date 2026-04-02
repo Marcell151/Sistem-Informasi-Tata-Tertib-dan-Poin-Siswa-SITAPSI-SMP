@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - Halaman Login (UI GLOBAL PORTAL)
+ * PENYESUAIAN: Shortcut Link ke Portal Wali Murid
+ */
 session_start();
 require_once '../../config/database.php';
 

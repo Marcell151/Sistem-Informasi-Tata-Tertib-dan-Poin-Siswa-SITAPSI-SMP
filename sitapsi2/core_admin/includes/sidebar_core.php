@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * PORTAL SEKOLAH - Sidebar Core Admin (Master Data & Akademik)
+ * Lokasi: htdocs/portal_sekolah/core_admin/includes/sidebar_core.php
+ */
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 
@@ -32,8 +35,8 @@ function getNavClass($isActive) {
     <div class="p-6 border-b border-[#F1F5F9]">
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-md bg-slate-800 shadow-slate-900/10 flex-shrink-0">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 bg-white p-1">
+                    <img src="../../sitapsi/assets/img/logo.png" alt="Logo Santa Maria" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <h1 class="text-sm font-extrabold text-slate-800 tracking-tight">CORE SYSTEM</h1>

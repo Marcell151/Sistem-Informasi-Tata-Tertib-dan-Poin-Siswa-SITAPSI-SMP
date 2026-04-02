@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * PORTAL TERPADU - App Launchpad (SSO)
+ * Lokasi: C:\xampp\htdocs\portal_sekolah\launchpad.php
+ * FIXED: Masalah penamaan folder untuk SuperAdmin agar diarahkan ke folder 'admin'
+ */
 session_start();
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) { 
@@ -77,8 +81,8 @@ if (!$cek_ta) {
     <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-[#000080] rounded flex items-center justify-center text-white font-bold shadow-md">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <img src="sitapsi/assets/img/logo.png" alt="Logo Santa Maria" class="w-full h-full object-contain">
                 </div>
                 <span class="font-extrabold text-slate-800 tracking-tight">Portal Terpadu</span>
                 <span class="ml-2 px-2 py-0.5 bg-slate-100 border border-slate-200 text-slate-500 rounded text-[10px] font-bold uppercase hidden sm:inline">Hak Akses: <?= $role ?></span>
