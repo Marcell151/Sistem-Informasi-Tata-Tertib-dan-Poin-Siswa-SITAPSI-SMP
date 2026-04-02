@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Jakarta');
 
 // Konfigurasi Database
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'db_sitapsi');
+define('DB_NAME', 'db_portal');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
