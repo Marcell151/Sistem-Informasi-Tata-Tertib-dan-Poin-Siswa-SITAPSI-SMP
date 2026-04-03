@@ -1,4 +1,8 @@
 <?php
+/**
+ * SITAPSI - Tambah Siswa Manual
+ * PENYESUAIAN: Penambahan tangkapan data id_ortu
+ */
 
 session_start();
 require_once '../config/database.php';

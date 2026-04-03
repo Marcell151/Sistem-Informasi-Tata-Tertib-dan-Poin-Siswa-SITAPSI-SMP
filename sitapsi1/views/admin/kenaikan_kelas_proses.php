@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - Proses Kenaikan Kelas (UI GLOBAL PORTAL)
+ * Pilih siswa dari kelas asal → Pindahkan ke kelas tujuan
+ */
 
 session_start();
 require_once '../../config/database.php';

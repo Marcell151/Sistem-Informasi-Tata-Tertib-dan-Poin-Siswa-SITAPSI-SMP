@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * SITAPSI - Input Pelanggaran (UI GLOBAL PORTAL)
+ * FIX: Filter 2 Tahap (Pilih Kelas -> Pilih Siswa), Waktu Live
+ * PENYESUAIAN: Fitur Upload diperluas (Gambar, PDF, Word, atau Link Eksternal)
+ * PENAMBAHAN: System Initialization Barrier khusus Guru
+ */
 
 session_start();
 require_once '../../config/database.php';

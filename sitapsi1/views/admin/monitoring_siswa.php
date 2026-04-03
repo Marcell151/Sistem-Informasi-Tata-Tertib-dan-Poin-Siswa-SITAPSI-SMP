@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - Monitoring Siswa (UI GLOBAL PORTAL)
+ * Flow: Pilih Kelas → Pilih Siswa → Detail
+ */
 
 session_start();
 require_once '../../config/database.php';

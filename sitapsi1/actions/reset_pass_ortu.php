@@ -1,4 +1,7 @@
 <?php
+/**
+ * SITAPSI - Action Reset Password Orang Tua oleh Admin
+ */
 
 session_start();
 require_once '../config/database.php';

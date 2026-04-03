@@ -1,4 +1,8 @@
 <?php
+/**
+ * SITAPSI - Simpan Pelanggaran (FIX - Upload Foto Bukti & No Induk)
+ * PENYESUAIAN: Perbaikan Path Folder (../assets/) & Security Filter untuk Gambar, PDF, WORD
+ */
 
 date_default_timezone_set('Asia/Jakarta');
 

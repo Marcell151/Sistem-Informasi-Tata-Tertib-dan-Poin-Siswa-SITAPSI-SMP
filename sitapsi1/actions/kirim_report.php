@@ -1,4 +1,8 @@
 <?php
+/**
+ * SITAPSI - Kirim Report / Pengajuan Revisi
+ * Memproses laporan dari Wali Kelas
+ */
 
 session_start();
 require_once '../config/database.php';

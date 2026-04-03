@@ -1,4 +1,8 @@
 <?php
+/**
+ * SITAPSI - Tutup Tahun Ajaran
+ * Logic: Arsip tahun lama, Buat tahun baru, Luluskan kelas 9, Copy siswa aktif
+ */
 
 session_start();
 require_once '../config/database.php';

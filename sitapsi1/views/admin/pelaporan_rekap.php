@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - Pelaporan & Rekap (UI GLOBAL PORTAL)
+ * Hub untuk memilih: Rekapitulasi atau Rapor Karakter
+ */
 
 session_start();
 require_once '../../config/database.php';

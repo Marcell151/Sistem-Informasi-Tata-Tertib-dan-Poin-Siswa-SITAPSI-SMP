@@ -1,4 +1,7 @@
 <?php
+/**
+ * SITAPSI - Cetak & Download Rekapitulasi Denda Pelanggaran
+ */
 
 session_start();
 require_once '../config/database.php';

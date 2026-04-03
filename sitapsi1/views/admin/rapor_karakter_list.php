@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - List Siswa untuk Rapor Karakter (UI GLOBAL PORTAL)
+ * Step 2: Pilih Siswa dari Kelas
+ */
 
 session_start();
 require_once '../../config/database.php';
@@ -26,6 +29,7 @@ if (!$kelas) {
     exit;
 }
 
+// Ambil siswa dalam kelas (FOTO PROFIL DIHAPUS DARI QUERY)
 $siswa_list = fetchAll("
     SELECT 
         s.no_induk,

@@ -1,4 +1,7 @@
 <?php
+/**
+ * SITAPSI - Action Update Password oleh Orang Tua Sendiri
+ */
 
 session_start();
 require_once '../config/database.php';

@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SITAPSI - Export Rekap Kelas
+ * Export data rekap ke Excel (bisa dikembangkan ke PDF)
+ */
 
 session_start();
 require_once '../../config/database.php';

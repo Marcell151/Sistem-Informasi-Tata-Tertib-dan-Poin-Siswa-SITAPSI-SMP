@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * SITAPSI - Kenaikan Kelas (UI GLOBAL PORTAL)
+ */
 
 session_start();
 require_once '../../config/database.php';
