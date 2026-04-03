@@ -1,8 +1,5 @@
 <?php
-/**
- * PORTAL SEKOLAH - Sidebar Core Admin (Master Data & Akademik)
- * Lokasi: htdocs/portal_sekolah/core_admin/includes/sidebar_core.php
- */
+
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 

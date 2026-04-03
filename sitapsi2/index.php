@@ -1,8 +1,5 @@
 <?php
-/**
- * PORTAL TERPADU - Halaman Login SSO
- * Lokasi: htdocs/portal_sekolah/index.php
- */
+
 session_start();
 
 // Jika sudah login, langsung ke Launchpad

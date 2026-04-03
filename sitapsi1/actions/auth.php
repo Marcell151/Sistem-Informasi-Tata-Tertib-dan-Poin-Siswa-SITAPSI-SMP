@@ -1,11 +1,5 @@
 <?php
-/**
- * SITAPSI - Authentication Handler
- * Logic Login untuk Admin dan Guru dengan Security Best Practices
- * 
- * @author Senior PHP Developer
- * @version 1.0
- */
+
 
 session_start();
 require_once '../config/database.php';

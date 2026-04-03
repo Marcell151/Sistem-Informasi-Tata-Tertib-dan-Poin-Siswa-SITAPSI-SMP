@@ -1,8 +1,5 @@
 <?php
-/**
- * PORTAL SEKOLAH - Arsip Global Super-App
- * Menampilkan data historis Read-Only dari ke-6 Sistem Terintegrasi
- */
+
 
 session_start();
 require_once '../../config/database.php';

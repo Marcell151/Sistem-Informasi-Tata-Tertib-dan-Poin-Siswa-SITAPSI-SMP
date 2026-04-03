@@ -1,9 +1,5 @@
 <?php
-/**
- * PORTAL TERPADU - App Launchpad (SSO)
- * Lokasi: C:\xampp\htdocs\portal_sekolah\launchpad.php
- * FIXED: Masalah penamaan folder untuk SuperAdmin agar diarahkan ke folder 'admin'
- */
+
 session_start();
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['role'])) { 

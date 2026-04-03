@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Hapus Siswa
- * Menghapus siswa dari tb_siswa dan semua relasi
- */
+
 
 session_start();
 require_once '../config/database.php';

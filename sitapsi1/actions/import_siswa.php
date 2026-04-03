@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Action Import Siswa
- * Dilengkapi dengan Validasi Ekstensi File & Notifikasi UI
- * PENYESUAIAN: Autocreate Akun Orang Tua berdasarkan NIK dari Excel
- */
+
 session_start();
 require_once '../config/database.php';
 

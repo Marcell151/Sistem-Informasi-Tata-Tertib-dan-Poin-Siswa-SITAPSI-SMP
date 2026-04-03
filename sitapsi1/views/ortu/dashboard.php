@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Dashboard Hub Orang Tua (SUPER-APP)
- * Fitur: Menampilkan daftar anak (Relasi Kakak-Adik) & Tombol Modul Sistem
- * PENYESUAIAN: Penambahan Fitur Ganti Password di Navbar
- */
+
 
 session_start();
 require_once '../../config/database.php';

@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Detail Siswa untuk Orang Tua (READ ONLY)
- * FITUR BARU: Komunikasi 2 Arah (Buku Penghubung Digital via SP)
- */
+
 
 session_start();
 require_once '../../../config/database.php';

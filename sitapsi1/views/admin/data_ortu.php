@@ -1,8 +1,5 @@
 <?php
-/**
- * SITAPSI - Data Orang Tua / Wali Murid
- * FITUR: CRUD Lengkap (Tambah, Edit, Hapus, Reset Sandi)
- */
+
 
 session_start();
 require_once '../../config/database.php';

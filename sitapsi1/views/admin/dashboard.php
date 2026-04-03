@@ -1,10 +1,5 @@
 <?php
-/**
- * SITAPSI - Dashboard Admin (STANDALONE VERSION)
- * FIX LOGIKA: Menyesuaikan Aktivitas berdasarkan Semester Aktif
- * PENAMBAHAN: System Initialization Barrier di baris paling atas
- * REVISI UI: Hapus Grafik, Ganti Tabel Analitik & Tambah Metrik Reward
- */
+
 
 session_start();
 require_once '../../config/database.php';

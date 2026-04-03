@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Sidebar Admin (Modul Kedisiplinan)
- * Lokasi: htdocs/portal_sekolah/sitapsi/includes/sidebar_admin.php
- * PENYESUAIAN: Penghapusan Master Data (Dipindah ke Portal Core)
- */
+
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 

@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Data Siswa (UI ALIGNED WITH GLOBAL PORTAL)
- * [FIXED]: XSS Vulnerability pada tombol Edit & Hapus
- * [PENYESUAIAN BARU]: Relasi id_ortu dengan Dropdown TomSelect
- */
+
 
 session_start();
 require_once '../../config/database.php';

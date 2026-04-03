@@ -1,9 +1,5 @@
 <?php
-/**
- * SITAPSI - Cetak/Preview Kitir Kuning Pelanggaran
- * Format Kertas: A5 Portrait
- * Fix: Menghilangkan ruang kosong di bawah (Print & PDF) agar pas A5
- */
+
 
 session_start();
 require_once '../config/database.php';
